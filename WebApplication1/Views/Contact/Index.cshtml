@@ -1,0 +1,13 @@
+﻿<h1>Contact Index</h1>
+
+<h1>Student Name: @ViewBag.Name @ViewData["Surname"] @TempData["Age"]</h1>
+
+@using WebApplication1.Models;
+
+@model List<Student>
+ <ul>
+     @foreach (var item in Model) 
+     {
+        <li>@item</li>
+     }
+ </ul>
